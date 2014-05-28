@@ -3,36 +3,28 @@
 @prune : #281b2d;
 
 body {
-	background-color: @mauve;
 	font-family: quicksand;
 	letter-spacing: -2px;
 	font-size: 24px;
+	background:url(../background.jpg) no-repeat fixed;
+	background-size: cover;
 
 
 }
 
 
-
-.mauve {
-	background-color: @violet;
-	position: absolute;
-	display: block;
-	height: 10%;
-	width: 100%;
-	bottom: 0;
-	
-}
 
 .header {
 	padding: 9px 10px 3px 50%;
-	background: white;
+	background: black;
+	opacity: 0.3;
+
 	box-shadow: 0px 0px 20px 1px rgba(119, 119, 119, 0.8);
 	-moz-box-shadow: 0px 0px 10px 1px rgba(119, 119, 119, 0.8);
 	-webkit-box-shadow: 0px 0px 10px 1px rgba(119, 119, 119, 0.8);
 	position: absolute;
-
 	display: block;
-	height: 7%;
+	height: 8%;
 	width: 100%;
 	top: 0;
 	
@@ -45,13 +37,15 @@ body {
 
 		>a {
 			text-decoration: none;
+			color:white;
 		}
 
 	}
 }
 
 .home {
-	
+
+
 	>.video {
 		position: relative;
 		padding-top: 140px;
@@ -81,26 +75,23 @@ body {
 }
 
 .concept {
-
+	background: @violet;
+	color:white;
 }
+
 
 .fonctionnalite {
-
 	background: white;
-
-
 }
+
 
 .equipe {
 	background: @mauve;
-
-
 }
+
 
 .footer {
 	background: @prune;
-
-
 }
 
  /*-webkit-animation: scrollBgGridLinks 35s linear; 
