@@ -40,10 +40,11 @@ body{
 	height: 40px;
 >>>>>>> origin/concept
 	width: 100%;
-	height: -30px;
+	height: 60px;
 	top: 0;
 	position: fixed;
 	z-index: 3000;
+<<<<<<< HEAD
 <<<<<<< HEAD
 	
 =======
@@ -52,6 +53,10 @@ body{
 	height: 10%;
 	width: 100%;
 	top: 0;
+=======
+
+	
+>>>>>>> Home
     >ul{
       padding-left: 50%;
       margin-top: 13px;
@@ -71,12 +76,12 @@ body{
 	}
 }
 
-.content{
+#content{
   background:url(../background.jpg) no-repeat fixed;
   background-size: cover;
 }
 
-.home {
+#home {
 
 	>.video {
 		position: relative;
@@ -108,11 +113,28 @@ body{
 	>form {
 		position: relative;
 		float: right;
-		padding-left: 44px;
+		top: 350px;
+		left: -260px;
+		
+		>input[type=text]{
+		border-radius: 5px; 
+		opacity: 0.7;
+		font-family: quicksand;
+		font-size: 16px;
+		padding: 10px;
+		font-style: italic;
+		width: 260px;
+		}
+		>input[type=submit] {
+			border-radius: 5px; 
+		font-family: quicksand;
+		font-size: 16px;
+		padding: 10px;
+		}
 	}
 }
 
-.concept {
+#concept {
 	background: @violet;
 	color: #fff;
 	position: relative;
@@ -134,7 +156,7 @@ body{
 }
 
 
-.fonctionnalite {
+#fonctionnalite {
 	background: white;
 	position: relative;
 	top: 300px;
@@ -142,7 +164,7 @@ body{
 }
 
 
-.equipe {
+#equipe {
 	background: @mauve;
 	position: relative;
 	top: 300px;
@@ -150,7 +172,7 @@ body{
 }
 
 
-.footer {
+#footer {
 	background: @prune;
 	position: relative;
 	top: 300px;
