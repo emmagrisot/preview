@@ -35,6 +35,31 @@ body{
 	top: 0;
 	position: fixed;
 	z-index: 3000;
+<<<<<<< HEAD
+=======
+	
+	>a img{
+		width: 40px;
+		left : 40px;
+		position: relative;
+		float: left;
+		transition: opacity 0.2s ease-in-out;
+	}
+	.first {
+		position: relative;
+		z-index: 5;
+	}
+	.second {
+		position: relative;
+		left: 0px;
+		z-index:0;
+	}
+
+	>a img.first:hover {
+			opacity: 0;
+		}
+
+>>>>>>> Home
     >ul{
       padding-left: 50%;
       margin-top: 13px;
@@ -49,7 +74,12 @@ body{
 		>a {
 			text-decoration: none;
 			color:white;
+			transition: all 0.3s ease;
 		}
+		a:hover {
+			color: @mauve;
+		}
+		
 
 	}
 }
@@ -71,7 +101,11 @@ body{
 	>.logo {
 		display: block;
 		position: relative;
+<<<<<<< HEAD
 		width: 320px;
+=======
+		width: 250px;
+>>>>>>> Home
 		margin: 50px auto;
 		top: 100px;
 	}
