@@ -28,10 +28,9 @@
         <img class="second" src="img/echo-o-violet.png" /></a>
     <ul>
         <li><a href="#concept">CONCEPT</a></li>
-        <li><a href="#fonctionnalite">FONCTIONNALITÉS</a></li>
+        <li><a href="#projet">PROJET</a></li>
         <li><a href="#equipe">ÉQUIPE</a></li>
 </div>
- <div class="blocpage">
 
 <div id="home">
     <img class="logo" src="img/logo-echo-blanc.png" alt="Echo" title="Logo Echo">
@@ -41,7 +40,7 @@
     <p>
     Echo est un réseau social éphémère, où la durée de vos posts dépend des autres !
     </p>
-    <form>
+    <form><p>Pour être tenu au courant des nouveautés :</p>
         <input type="text" value="Entrez votre e-mail" onclick="if(this.value='Entrez votre e-mail')this.value=''">
         <input type="submit" value="OK" />
 
@@ -71,8 +70,60 @@
         </div>
     </div>
 
-<div id="fonctionnalite">
-    Def
+<div id="projet">
+    <h2><img src="img/multiple25.png" width="50px"> La base</h3>
+<p> Nous sommes 3 étudiants en première année de DUT Métiers du Multimédia et de l’Internet. Dans le cadre de cette formation, nous devons réaliser un projet, sur 1 an. C’est l’idée de créer un réseau social, de sa conception au rassemblement de sa communauté qui nous a réuni.</p>
+    <h2><img src="img/human74.png" width="68px"> La réflexion</h2>
+    <p>À partir de cette idée, nous avons réfléchi à des fonctionnalités supplémentaires pour créer l’envie aux utilisateurs de participer à notre communauté. 
+Nous avons principalement exploité le jeu portant sur le côté éphémère des posts, en faisant participer les autres membres à leurs durée de vie. 
+<br>Le post, appelé ici "Echo", serait rédigé et mis en ligne avec une durée de vie de X minutes, la durée de vie minimale. Les autres utilisateurs auraient le choix de reblogger le post — de le faire "résonner" — ce qui augmenterait la durée de vie de celui-ci de Y minutes. Lorsque l’echo arriverait à la fin de sa durée de vie, il disparaîtrait.
+<br>Ensuite, pour ajouter un peu de challenge, nous avons pensé à ajouter une fonction de compteurs, présente sur une page de de statistiques accessible depuis chaque profil utilisateur. 
+On y verrait le nombre de résonances totales que l’utilisateur a comptabilisé sur l’ensemble de ses echos, ainsi que la moyenne des résonances par post en sans doute d’autres statistiques à venir. 
+<br>Cette idée nous a conduit à la suivante : la création d’une Hot Page, qui afficherait les utilisateurs du réseau qui ont récemment comptabilisés le plus de résonances, ainsi que les echo qui auront  fait "le plus de bruit". Les informations présentées seront mises à jour régulièrement.
+Cette page aurait pour but de créer l’envie d’y apparaître, ou simplement de faire découvrir des nouveaux utilisateurs aux personnes qui s’y rendraient.
+</p>
+
+
+<style type="text/css"> 
+ #cadre{ 
+ width: 500px; 
+ height: 38px; 
+  } 
+</style> 
+  
+<script type="text/javascript"> 
+ function cache_div(nom_div) 
+ { 
+ if (document.getElementById) 
+ { 
+ obj = document.getElementById(nom_div); 
+ if (obj.style.overflow == "hidden") 
+ { 
+ obj.style.overflow = "visible"; 
+ obj.style.height = "auto"; 
+ } 
+  else 
+   { 
+ obj.style.overflow = "hidden"; 
+ obj.style.height = "38px"; 
+
+ } 
+ } 
+ } 
+</script>  
+  
+
+  
+<div id="cadre" style="overflow:hidden;"> 
+Bonjour,  
+je voulais créer un lien "lire la suite" ,si quelqu'un peu m'aider en me donnant le code css et html c urgent si c possible sachant que je ne connais pas le langage javascript donc je voulais un code en css et html seulement ,  
+merci d'avance. 
+Bonjour,  
+je voulais créer un lien "lire la suite" ,si quelqu'un peu m'aider en me donnant le code css et html c urgent si c possible sachant que je ne connais pas le langage javascript donc je voulais un code en css et html seulement ,  
+merci d'avance. </div> 
+
+<a href="#" onclick="cache_div('cadre');">...Lire la suite</a> 
+
 </div>
 
 <div id="equipe">
@@ -80,8 +131,11 @@
 </div>
 
 <div id="footer">
-    Jkl
-</div>
+    <form><p>Pour être tenu au courant des nouveautés :</p>
+        <input type="text" value="Entrez votre e-mail" onclick="if(this.value='Entrez votre e-mail')this.value=''">
+        <input type="submit" value="OK" />
+
+    </form>
 </div>
 </body>
 </html>
