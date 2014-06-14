@@ -15,8 +15,11 @@
 
           <script type="text/javascript" src="js/localscroll/jquery.localscroll.js"></script>
     <script type="text/javascript" src="js/localscroll/jquery.scrollTo.js"></script>
-     
+
     <script type="text/javascript" src="js/lancement.js"></script> <!-- lancement de la fonction scroll -->
+
+
+
     </head>
     <body>
 
@@ -24,23 +27,24 @@
 
 
 <div class="header">
-	<a href="#home"><img class="first" src="img/O echo blanc.png" />
-        <img class="second" src="img/O echo logo(violet).png" /></a>
+	<a href="#home"><img class="first" src="img/echo-o-blanc.png" />
+        <img class="second" src="img/echo-o-violet.png" /></a>
     <ul>
         <li><a href="#concept">CONCEPT</a></li>
-        <li><a href="#fonctionnalite">FONCTIONNALITÉS</a></li>
+        <li><a href="#projet">PROJET</a></li>
         <li><a href="#equipe">ÉQUIPE</a></li>
+    </ul>
 </div>
 
 <div id="home">
-    <img class="logo" src="img/echo logo(blanc).png" alt="Echo" title="Echo">
+    <img class="logo" src="img/logo-echo-blanc.png" alt="Echo" title="Logo Echo">
    <iframe class="video" width="560" height="315" src="//www.youtube.com/embed/rx7l5nDbkzc" frameborder="0" allowfullscreen></iframe>
 
 
     <p>
     Echo est un réseau social éphémère, où la durée de vos posts dépend des autres !
     </p>
-    <form>
+    <form><p>Pour être tenu au courant des nouveautés :</p>
         <input type="text" value="Entrez votre e-mail" onclick="if(this.value='Entrez votre e-mail')this.value=''">
         <input type="submit" value="OK" />
 
@@ -49,28 +53,62 @@
 
 <div id="concept">
 	<div>
-        <div>
-            <img src="img/hexa.png" alt="">
-            <p>Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud </p>
+        <div class="hexa">
+            <img src="img/post-echo.png" alt="post-echo" title="poster un echo">
+            <p>Vous postez un echo de 100 caractères avec la durée de vie minimum.</p>
         </div>
-        <div>
-            <img src="img/hexa.png" alt="">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        <div class="fleche">
+            <img src="img/fleche.png" alt="fleche">
+        </div>
+        <div class="hexa">
+            <img src="img/resonner-echo.png" alt="resonner-echo" title="Faire résonner un echo">
+            <p>Les autres utilisateurs le font résonner, votre echo est partagé et sa durée de vie augmente.
              </p>
         </div>
-        <div>
-            <img src="img/hexa.png" alt="">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labor</p>
+        <div class="fleche">
+            <img src="img/fleche.png" alt="fleche">
+        </div>
+        <div class="hexa">
+            <img src="img/disparition-echo.png" alt="disparition-echo">
+            <p>Lorsqu'il arrive à la fin de sa durée de vie, l'echo disparaît.</p>
         </div>
     </div>
-<div id="concept">
-	Abc
 </div>
 
-<div id="fonctionnalite">
-    Def
+<div id="projet">
+    <h2><img src="img/multiple25.png" width="50px"> La base</h3>
+<p> Nous sommes 3 étudiants en première année de DUT Métiers du Multimédia et de l’Internet. Dans le cadre de cette formation, nous devons réaliser un projet, sur 1 an. C’est l’idée de créer un réseau social, de sa conception au rassemblement de sa communauté qui nous a réuni.</p>
+    <h2><img src="img/human74.png" width="68px"> La réflexion</h2>
+    <p>À partir de cette idée, nous avons réfléchi à des fonctionnalités supplémentaires pour créer l’envie aux utilisateurs de participer à notre communauté.
+Nous avons principalement exploité le jeu portant sur le côté éphémère des posts, en faisant participer les autres membres à leurs durée de vie.
+<br>Le post, appelé ici "Echo", serait rédigé et mis en ligne avec une durée de vie de <a href='#afficher_plus'><span id="showHide">>> Afficher la suite...</a></span>
+
+   <script>
+document.getElementById("showHide").onclick = function() {
+    var theDiv = document.getElementById("cadre");
+    if(theDiv.style.display == 'none') {
+        theDiv.style.display = 'block';
+        this.innerHTML = '>>> Réduire';
+    } else {
+        theDiv.style.display = 'none';
+        this.innerHTML = '>>> Afficher la suite';
+    }
+}
+</script>
+<div id="cadre" style="display:none;">
+     X minutes, la durée de vie minimale. Les autres utilisateurs auraient le choix de reblogger le post — de le faire "résonner" — ce qui augmenterait la durée de vie de celui-ci de Y minutes. Lorsque l’echo arriverait à la fin de sa durée de vie, il disparaîtrait.
+<br>Ensuite, pour ajouter un peu de challenge, nous avons pensé à ajouter une fonction de compteurs, présente sur une page de de statistiques accessible depuis chaque profil utilisateur.
+On y verrait le nombre de résonances totales que l’utilisateur a comptabilisé sur l’ensemble de ses echos, ainsi que la moyenne des résonances par post en sans doute d’autres statistiques à venir.
+<br>Cette idée nous a conduit à la suivante : la création d’une Hot Page, qui afficherait les utilisateurs du réseau qui ont récemment comptabilisés le plus de résonances, ainsi que les echo qui auront  fait "le plus de bruit". Les informations présentées seront mises à jour régulièrement.
+Cette page aurait pour but de créer l’envie d’y apparaître, ou simplement de faire découvrir des nouveaux utilisateurs aux personnes qui s’y rendraient.
+</div>
+
+</p>
+
+
+
+
+
 </div>
 
 <div id="equipe">
@@ -78,7 +116,11 @@
 </div>
 
 <div id="footer">
-    Jkl
+    <form><p>Pour être tenu au courant des nouveautés :</p>
+        <input type="text" value="Entrez votre e-mail" onclick="if(this.value='Entrez votre e-mail')this.value=''">
+        <input type="submit" value="OK" />
+
+    </form>
 </div>
 </body>
 </html>
