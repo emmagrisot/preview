@@ -1,6 +1,7 @@
 @mauve : #ba90c6;
 @violet : #8c5997;
 @prune : #281b2d;
+@orange : #d98f00;
 
 h3,ul{
   margin: 0px;
@@ -24,19 +25,28 @@ form {
 			letter-spacing: -0.4px;
 		}
 		>input[type=text]{
-  		border-radius: 5px;
+  		border-radius: 5px 0 0 5px;
   		opacity: 0.7;
   		font-family: quicksand;
   		font-size: 16px;
-  		padding: 10px;
+  		padding: 15px 20px;
   		font-style: italic;
   		width: 260px;
+  		border: none;
 		}
 		>input[type=submit] {
-  		border-radius: 5px;
+  		border-radius: 0 5px 5px 0;
   		font-family: quicksand;
   		font-size: 16px;
-  		padding: 10px;
+  		padding: 15px 30px;
+  		border: none;
+  		background-color: @orange;
+  		color: white;
+  		transition: all 0.4s ease;
+		}
+		input[type=submit]:hover {
+		background-color: lighten(@orange, 7%);
+
 		}
 	}
 
